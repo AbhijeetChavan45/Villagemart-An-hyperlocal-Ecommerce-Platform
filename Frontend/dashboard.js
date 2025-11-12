@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     async function fetchProfileInfo() {
         try {
-            const res = await fetch('http://localhost:3001/api/users/profile', { headers: { 'Authorization': `Bearer ${token}` } });
+            const res = await fetch('https://villagemart-an-hyperlocal-ecommerce.onrender.com/api/users/profile', { headers: { 'Authorization': `Bearer ${token}` } });
             if (!res.ok) throw new Error('Could not fetch profile');
             const profile = await res.json();
             document.getElementById('vendorName').textContent = profile.name;
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     async function loadCategories() {
         try {
-            const res = await fetch('http://localhost:3001/api/products/categories');
+            const res = await fetch('https://villagemart-an-hyperlocal-ecommerce.onrender.com/api/products/categories');
             const categories = await res.json();
             categorySelect.innerHTML = '<option value="">Select a Category</option>';
             categories.forEach(cat => {
@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     async function fetchVendorProducts() {
         try {
-            const res = await fetch('http://localhost:3001/api/vendor/products', { headers: { 'Authorization': `Bearer ${token}` } });
+            const res = await fetch('https://villagemart-an-hyperlocal-ecommerce.onrender.com/api/vendor/products', { headers: { 'Authorization': `Bearer ${token}` } });
             vendorProducts = await res.json();
             vendorProductsList.innerHTML = '';
             if (vendorProducts.length === 0) { vendorProductsList.innerHTML = '<p>You have not added any products yet.</p>'; } else {
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const productData = Object.fromEntries(formData.entries());
         const productId = editProductId.value;
         const method = productId ? 'PUT' : 'POST';
-        const url = productId ? `http://localhost:3001/api/vendor/products/${productId}` : 'http://localhost:3001/api/vendor/products';
+        const url = productId ? `https://villagemart-an-hyperlocal-ecommerce.onrender.com/api/vendor/products/${productId}` : 'https://villagemart-an-hyperlocal-ecommerce.onrender.com/api/vendor/products';
         try {
             await fetch(url, { method: method, headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` }, body: JSON.stringify(productData) });
             resetForm();

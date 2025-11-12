@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const userEmailEl = document.getElementById('userEmail');
         
         try {
-            const res = await fetch('https://villagemart-an-hyperlocal-ecommerce.onrender.com/api/auth/login', {
+            const res = await fetch('https://villagemart-an-hyperlocal-ecommerce.onrender.com/api/users/profile', {
                 headers: { 'Authorization': `Bearer ${token}` }
             });
             if (!res.ok) throw new Error('Could not fetch profile');
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const fetchOrderHistory = async () => {
         const ordersContainer = document.getElementById('ordersContainer');
         try {
-            const res = await fetch('http://localhost:3001/api/orders/myorders', {
+            const res = await fetch('https://villagemart-an-hyperlocal-ecommerce.onrender.com/api/orders/myorders', {
                 headers: { 'Authorization': `Bearer ${token}` }
             });
             if (!res.ok) throw new Error('Failed to fetch orders');

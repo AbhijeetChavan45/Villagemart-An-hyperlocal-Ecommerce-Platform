@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         try {
             // THIS IS THE CORRECTED FULL URL
-            const res = await fetch('https://villagemart-an-hyperlocal-ecommerce.onrender.com/api/auth/login', {
+            const res = await fetch('https://villagemart-an-hyperlocal-ecommerce.onrender.com/api/orders', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

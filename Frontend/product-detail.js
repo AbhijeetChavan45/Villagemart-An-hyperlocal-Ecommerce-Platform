@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const container = document.getElementById("productDetailContainer");
 
     try {
-        const response = await fetch('https://villagemart-an-hyperlocal-ecommerce.onrender.com/api/auth/login');
+        const response = await fetch('https://villagemart-an-hyperlocal-ecommerce.onrender.com/api/products');
         if (!response.ok) throw new Error('Failed to load products');
         
         products = await response.json();
