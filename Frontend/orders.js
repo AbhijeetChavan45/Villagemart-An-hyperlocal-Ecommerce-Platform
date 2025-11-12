@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const userEmailEl = document.getElementById('userEmail');
         
         try {
-            const res = await fetch('http://localhost:3001/api/users/profile', {
+            const res = await fetch('https://villagemart-an-hyperlocal-ecommerce.onrender.com/api/auth/login', {
                 headers: { 'Authorization': `Bearer ${token}` }
             });
             if (!res.ok) throw new Error('Could not fetch profile');
