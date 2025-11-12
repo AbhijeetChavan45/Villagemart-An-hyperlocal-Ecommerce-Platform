@@ -81,7 +81,7 @@ if (searchInput) {
 // When the page loads, fetch all products and then render them
 document.addEventListener("DOMContentLoaded", async () => {
     try {
-        const response = await fetch('http://localhost:3001/api/products');
+        const response = await fetch('https://villagemart-ecommerce.netlify.app/');
         products = await response.json(); // Fill the global products array
         renderProducts(); // Render all products initially
     } catch (error) {

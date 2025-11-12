@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const container = document.getElementById("productDetailContainer");
 
     try {
-        const response = await fetch('http://localhost:3001/api/products');
+        const response = await fetch('https://villagemart-ecommerce.netlify.app/');
         if (!response.ok) throw new Error('Failed to load products');
         
         products = await response.json();
