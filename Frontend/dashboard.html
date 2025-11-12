@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor Dashboard - VillageMart</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"> 
+</head>
+<body>
+    <header class="main-header">
+    <div class="header-left">
+        <div class="logo">
+            <a href="/">VillageMart</a>
+        </div>
+    </div>
+   
+    <div id="headerRight" class="header-right">
+        </div>
+      <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-menu">
+        <i class="ri-menu-line"></i>
+    
+</header>
+    <main class="container">
+        <h1>Vendor Dashboard</h1>
+        <div class="dashboard-layout">
+            <div class="dashboard-section">
+                <h2>Vendor Profile</h2>
+                <div id="vendorProfileInfo" class="profile-info">
+                    <p><strong>Name:</strong> <span id="vendorName">Loading...</span></p>
+                    <p><strong>Email:</strong> <span id="vendorEmail">Loading...</span></p>
+                </div>
+            </div>
+            <div class="dashboard-section">
+                <h2>My Products</h2>
+                <div id="vendorProductsList"></div>
+            </div>
+            <div class="dashboard-section add-product-section">
+                <h2>Add a New Product</h2>
+               <form id="addProductForm">
+    <input type="hidden" id="editProductId" name="productId"> <div class="form-group"><label>Product Name</label><input name="name" type="text" required></div>
+    <div class="form-group"><label>Price</label><input name="price" type="number" required></div>
+    <div class="form-group"><label>Unit (e.g., / kg)</label><input name="unit" type="text"></div>
+    <div class="form-group"><label>Image URL</label><input name="img" type="text" required></div>
+    <div class="form-group"><label>Category</label><select name="category" id="categorySelect" required></select></div>
+    <div class="form-group full-width"><label>Product Description</label><textarea name="description" required></textarea></div>
+    <div class="form-buttons full-width">
+        <button type="submit" class="cta-btn">Add Product</button>
+        <button type="button" id="cancelEditBtn" class="cancel-btn hidden">Cancel</button> </div>
+</form>
+            </div>
+        </div>
+    </main>
+    <script src="shared.js"></script>
+    <script src="dashboard.js"></script>
+    <script src="homepage.js"></script>
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-translate="page_title">VillageMart - Your Local Market, Online</title>
+  <link rel="stylesheet" href="homepage.css">
+  <link rel="stylesheet" href="style.css"> 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" /> 
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo" data-translate="logo">VillageMart</a>
+
+      <div class="nav-menu">
+        <ul class="nav-items">
+          <li><a href="homepage.html" data-translate="nav_home">Home</a></li>
+          <li><a href="#about" data-translate="nav_about">About Us</a></li>
+          <li><a href="shop.html" data-translate="nav_products">Products</a></li>
+          <li><a href="#contact" data-translate="nav_contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-right">
+          <select class="language-select" aria-label="Select Language">
+            <option value="en">English</option>
+            <option value="mr">मराठी</option>
+            <option value="hi">हिन्दी</option>
+          </select>
+        </div>
+      </div>
+       <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-menu">
+        <i class="ri-menu-line"></i>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <header id="home" class="hero">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <h1 data-translate="hero_title">Your Local Market,<br> Now Online.</h1>
+          <p class="hero-slogan" data-translate="hero_slogan">Connecting rural vendors with nearby buyers. Fresh products, local community, trusted relationships—all in one marketplace.</p>
+          <p class="hero-tagline" data-translate="hero_tagline">Serving your local community in English | Marathi | Hindi</p>
+          <div class="hero-buttons">
+            <a href="shop.html"> <button class="cta-btn" data-translate="hero_btn_shop">Start Shopping Now</button> </a>
+            <a href="login.html" ><button class="secondary-btn" data-translate="hero_btn_vendor">Become a Vendor</button> </a>
+          </div>
+        </div>
+        <div class="hero-image-wrapper">
+          <img class="hero-image" src="background.png" alt="A vibrant local market scene with fresh produce.">
+        </div>
+      </div>
+    </header>
+
+    <section id="about" class="how-it-works">
+      <div class="container">
+        <h2 data-translate="how_it_works_title">How VillageMart Works</h2>
+        <p class="section-subtitle" data-translate="how_it_works_subtitle">Simple, local, and community-focused. We bring rural vendors and buyers together in just a few easy steps.</p>
+        <div class="steps">
+          <div class="step">
+            <div class="icon"><i class="ri-home-heart-line"></i></div>
+            <h3 data-translate="step1_title">Vendors List Products</h3>
+            <p data-translate="step1_desc">Local farmers and artisans showcase their fresh produce, handmade goods, and services on our platform.</p>
+          </div>
+          <div class="step">
+            <div class="icon"><i class="ri-search-2-line"></i></div>
+            <h3 data-translate="step2_title">Buyers Discover Locally</h3>
+            <p data-translate="step2_desc">Community members browse and discover products from trusted vendors in their area.</p>
+          </div>
+          <div class="step">
+            <div class="icon"><i class="ri-truck-line"></i></div>
+            <h3 data-translate="step3_title">Easy Pickup & Delivery</h3>
+            <p data-translate="step3_desc">Convenient pickup locations or local delivery options make getting your products simple.</p>
+          </div>
+          <div class="step">
+            <div class="icon"><i class="ri-heart-line"></i></div>
+            <h3 data-translate="step4_title">Community Grows</h3>
+            <p data-translate="step4_desc">Every purchase supports local vendors and strengthens the community economy.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="categories">
+        <div class="container">
+            <h2 data-translate="categories_title">Shop by Category</h2>
+            <p class="section-subtitle" data-translate="categories_subtitle">Explore a variety of items from local vendors</p>
+            <div class="category-grid">
+               <a href="category.html?name=Fruits%20%26%20Vegetables">
+                <div class="category-card">
+                    <i class="ri-apple-line"></i>
+                    <h3 data-translate="cat_essentials_title">Daily Essentials</h3>
+                    <p data-translate="cat_essentials_desc">Fresh groceries and everyday items delivered to your doorstep.</p>
+                </div>
+                </a>
+               <a href="category.html?name=Clothes">
+                <div class="category-card">
+                    <i class="ri-t-shirt-line"></i>
+                    <h3 data-translate="cat_garments_title">Garments</h3>
+                    <p data-translate="cat_garments_desc">Clothing for all ages, sourced from local markets.</p>
+                </div>
+                </a>
+               <a href="category.html?name=Electronics">
+                <div class="category-card">
+                    <i class="ri-tv-2-line"></i>
+                    <h3 data-translate="cat_electronics_title">Electronics</h3>
+                    <p data-translate="cat_electronics_desc">Gadgets and devices available from trusted local sellers.</p>
+                </div>
+                </a>
+               <a href="category.html?name=Handicrafts">
+                <div class="category-card">
+                    <i class="ri-palette-line"></i>
+                    <h3 data-translate="cat_textiles_title">Textiles</h3>
+                    <p data-translate="cat_textiles_desc">Traditional clothing, fabrics, and home textiles.</p>
+                </div>
+                </a>
+                <a href="category.html?name=Tools%20%26%20Equipment">
+                <div class="category-card">
+                    <i class="ri-hammer-line"></i>
+                    <h3 data-translate="cat_tools_title">Tools & Equipment</h3>
+                    <p data-translate="cat_tools_desc">Farming tools, household items, and rural equipment.</p>
+                </div>
+                </a>
+               <a href="category.html?name=Dairy">
+                <div class="category-card">
+                   <i class="ri-cup-line"></i>
+                    <h3 data-translate="cat_dairy_title">Dairy & Breakfast</h3>
+                    <p data-translate="cat_dairy_desc">find everything you need for a perfect morning.</p>
+                </div>
+               </a>
+            </div>
+            <a href="shop.html">
+                <button class="cta-btn" data-translate="explore_btn">Explore All Categories</button>
+            </a>
+        </div>
+    </section>
+
+    <section class="vendors">
+        <div class="container">
+            <h2 data-translate="vendors_title">Our Local Vendors</h2>
+            <p class="section-subtitle" data-translate="vendors_subtitle">Meet the trusted sellers bringing their shops online with VillageMart.</p>
+            <div class="vendor-grid">
+                <div class="vendor-card">
+                    <img src="https://placehold.co/120x120/FF7043/FFF?text=SM" alt="Shree Fresh Mart logo">
+                    <h3 data-translate="vendor1_name">Shree Fresh Mart</h3>
+                    <p data-translate="vendor1_cat">Groceries & Daily Essentials</p>
+                </div>
+                <div class="vendor-card">
+                    <img src="https://placehold.co/120x120/FF7043/FFF?text=LG" alt="Laxmi Garments logo">
+                    <h3 data-translate="vendor2_name">Laxmi Garments</h3>
+                    <p data-translate="vendor2_cat">Traditional & Modern Wear</p>
+                </div>
+                <div class="vendor-card">
+                    <img src="https://placehold.co/120x120/FF7043/FFF?text=TB" alt="TechBazaar logo">
+                    <h3 data-translate="vendor3_name">TechBazaar</h3>
+                    <p data-translate="vendor3_cat">Electronics & Gadgets</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2 data-translate="testimonials_title">What People Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <img src="Guest.png" alt="Ramesh Patil" />
+                    <p data-translate="testimonial1_text">"VillageMart made it easy to buy fresh vegetables from local farmers. Very convenient!"</p>
+                    <div class="stars">★★★★★</div>
+                    <h3 data-translate="testimonial1_name">Ramesh Patil</h3>
+                </div>
+                <div class="testimonial-card">
+                    <img src="Guest.png" alt="Sunita Joshi" />
+                    <p data-translate="testimonial2_text">"I uploaded my handmade garments and got my first order within 2 days. Great for small vendors!"</p>
+                    <div class="stars">★★★★★</div>
+                    <h3 data-translate="testimonial2_name">Sunita Joshi</h3>
+                </div>
+                <div class="testimonial-card">
+                    <img src="Guest.png" alt="Rahul Deshmukh" />
+                    <p data-translate="testimonial3_text">"The pre-order feature for mangoes is amazing. Got fresh Alphonso delivered on time!"</p>
+                    <div class="stars">★★★★☆</div>
+                    <h3 data-translate="testimonial3_name">Rahul Deshmukh</h3>
+                </div>
+            </div>
+            <div class="testimonial-cta">
+                <p data-translate="cta_text">Join hundreds of happy buyers & vendors on VillageMart!</p>
+                <a href="login.html"><button class="cta-btn" data-translate="cta_btn">Get Started</button></a>
+            </div>
+        </div>
+    </section>
+  </main>
+ <footer id="contact" class="footer">
+    <div class="container footer-container">
+        <div class="footer-col footer-brand">
+            <h3 class="logo" data-translate="logo">VillageMart</h3>
+            <p data-translate="footer_tagline">Connecting rural vendors with local buyers. Fresh from the village, to your home.</p>
+            <div class="social-links">
+                <a href="#"><i class="ri-facebook-fill"></i></a>
+                <a href="#"><i class="ri-instagram-line"></i></a>
+                <a href="#"><i class="ri-twitter-x-line"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h4 data-translate="footer_quick_links_title">Quick Links</h4>
+            <ul>
+                <li><a href="#about" data-translate="nav_about">About Us</a></li> 
+                <li><a href="shop.html" data-translate="footer_shop_all">Shop All Products</a></li>
+                <li><a href="login.html" data-translate="hero_btn_vendor">Become a Vendor</a></li> 
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4 data-translate="footer_shop_by_cat_title">Shop by Category</h4>
+            <ul>
+                <li><a href="category.html?name=Fruits%20%26%20Vegetables" data-translate="footer_cat_fruits_veg">Fruits & Vegetables</a></li>
+                <li><a href="category.html?name=Grains" data-translate="footer_cat_grains">Grains</a></li>
+                <li><a href="category.html?name=Dairy" data-translate="footer_cat_dairy">Dairy</a></li>
+                <li><a href="category.html?name=Handicrafts" data-translate="footer_cat_handicrafts">Handicrafts</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4 data-translate="footer_newsletter_title">Stay Updated</h4>
+            <p data-translate="footer_newsletter_text">Subscribe to our newsletter for the latest products and offers.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your email address" data-translate-placeholder="footer_newsletter_placeholder">
+                <button type="submit" class="cta-btn" data-translate="footer_newsletter_button">Subscribe</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p data-translate="footer_copyright">© 2025 VillageMart. All rights reserved.</p>
+    </div>
+</footer>
+  <script src="translate.js"></script>
+  <!-- <script src="homepage.js"></script>  -->
+  <script src="shared.js"></script>
+  <script>
+    
+  const navToggle = document.querySelector(".nav-toggle");
+  const navMenu = document.querySelector(".nav-menu");
+  const icon = navToggle.querySelector("i");
+
+  navToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+    const isOpen = navMenu.classList.contains("active");
+    icon.className = isOpen ? "ri-close-line" : "ri-menu-line";
+  });
+
+
+  </script>
+</body>
+</html>

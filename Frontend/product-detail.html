@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="product-detail.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">  
+</head>
+<body>
+<header class="main-header">
+    <div class="header-left">
+        <div class="logo">
+            <a href="shop.html">VillageMart</a>
+        </div>
+    </div>
+    <div class="header-center">
+        <div class="search-bar">
+            <input type="search" id="searchInput" placeholder="Search for products...">
+        </div>
+    </div>
+    <div id="headerRight" class="header-right"></div>
+    <button class="nav-toggle" id="nav-toggle"> <i class="ri-menu-3-fill"></i>
+    </button>
+</header>
+
+    <main id="productDetailContainer" class="container">
+        <p>Loading product details...</p>
+    </main>
+
+  <footer id="contact" class="footer">
+    <div class="container footer-container">
+        <div class="footer-col footer-brand">
+            <h3 class="logo">VillageMart</h3>
+            <p>Connecting rural vendors with local buyers. Fresh from the village, to your home.</p>
+            <div class="social-links">
+                <a href="#"><i class="ri-facebook-fill"></i></a>
+                <a href="#"><i class="ri-instagram-line"></i></a>
+                <a href="#"><i class="ri-twitter-x-line"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href="shop.html">Shop All Products</a></li>
+                <li><a href="login.html">Become a Vendor</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Shop by Category</h4>
+            <ul>
+                <li><a href="category.html?name=Fruits%20%26%20Vegetables">Fruits & Vegetables</a></li>
+                <li><a href="category.html?name=Grains">Grains</a></li>
+                <li><a href="category.html?name=Dairy">Dairy</a></li>
+                <li><a href="category.html?name=Handicrafts">Handicrafts</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Stay Updated</h4>
+            <p>Subscribe to our newsletter for the latest products and offers.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your email address">
+                <button type="submit" class="cta-btn">Subscribe</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2025 VillageMart. All rights reserved.</p>
+    </div>
+</footer>
+
+    <div id="cartModal" class="modal">
+    <div class="modal-overlay" onclick="closeCartModal()"></div>
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>Your Cart</h2>
+            <button class="close-btn" onclick="closeCartModal()">×</button>
+        </div>
+        <div id="cartItemsList" class="cart-items-list">
+            </div>
+        <div class="modal-footer">
+            <div class="cart-total">
+                <strong>Total (<span id="modalCartQuantity">0</span> items):</strong>
+                <span id="modalCartTotal">₹0.00</span>
+            </div>
+            <a href="checkout.html" class="checkout-btn">Proceed to Checkout</a>
+        </div>
+    </div>
+</div>
+
+    <script src="shared.js"></script>
+    <script src="product-detail.js"></script>
+    <script src="homepage.js"></script>
+</body>
+</html>

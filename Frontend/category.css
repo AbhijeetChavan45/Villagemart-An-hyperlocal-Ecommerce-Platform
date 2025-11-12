@@ -1,0 +1,53 @@
+#categoryTitle {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 1rem;
+}
+.product-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 2rem;
+}
+.product-grid-container .product-card {
+    width: 100%;
+    flex: none;
+}
+
+
+/* RESPONSIVE STYLES FOR CATEGORY PAGE               */
+
+
+/* --- For Tablets  */
+@media (max-width: 768px) {
+    #categoryTitle {
+        font-size: 2rem; 
+        margin-bottom: 1.5rem;
+    }
+
+    .product-grid-container {
+       
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem; 
+    }
+}
+
+/* --- For Mobile Phones */
+@media (max-width: 576px) {
+    #categoryTitle {
+        font-size: 1.8rem; 
+    }
+
+    .product-grid-container {
+       
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem; 
+    }
+
+  
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+

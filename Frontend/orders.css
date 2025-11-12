@@ -1,0 +1,116 @@
+/* in products/orders.css (REPLACE EVERYTHING) */
+.profile-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+/* Sidebar (Left side) */
+.profile-sidebar {
+    flex: 0 0 280px; /* Fixed width of 280px */
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 1px solid #e0e0e0;
+}
+
+.user-info {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+}
+#userName {
+    display: block;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #333;
+}
+#userPhone {
+    display: block;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+.profile-nav .nav-link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 1rem;
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: background-color 0.2s, color 0.2s;
+}
+.profile-nav .nav-link:hover {
+    background-color: #f5f5f5;
+    color: var(--primary-color);
+}
+.profile-nav .nav-link.active {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+/* Content Area (Right side) */
+.profile-content {
+    flex-grow: 1; /* Takes up the remaining space */
+}
+
+.order-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+}
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 1rem;
+}
+.order-header div span { font-weight: bold; }
+.order-item-list .order-item { display: flex; align-items: center; padding: 10px 0; }
+.order-item img { width: 50px; height: 50px; border-radius: 8px; margin-right: 15px; }
+
+
+
+/* ================================================= */
+/* RESPONSIVE STYLES FOR MY ORDERS (PROFILE) PAGE    */
+
+
+/* --- For Tablets and Mobile (screens smaller than 768px) --- */
+@media (max-width: 768px) {
+    .profile-layout {
+       
+        flex-direction: column;
+    }
+
+    .profile-sidebar {
+       
+        width: 100%;
+        box-sizing: border-box;
+        flex: none;
+    }
+}
+
+/* --- For Small Mobile Phones  */
+@media (max-width: 576px) {
+   
+    .profile-sidebar, .order-card {
+        padding: 1rem;
+    }
+
+    .profile-nav .nav-link {
+        padding: 0.8rem; 
+        font-size: 0.9rem;
+    }
+
+    .order-header {
+        
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+}
+

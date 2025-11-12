@@ -1,0 +1,110 @@
+/* in products/style-login.css */
+:root {
+    --primary-color: #2e7d32;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+.form-container {
+    background-color: #fff;
+    padding: 2rem 3rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+}
+.form h2 { margin-top: 0; }
+.form p { color: #666; }
+.input-group { margin-bottom: 1.5rem; }
+.input-group label { display: block; margin-bottom: 0.5rem; font-weight: 600; }
+.input-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+.cta-btn {
+    width: 100%;
+    padding: 1rem;
+    background-color: #2e7d32;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.form-toggle-text {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+.form-toggle-text a {
+    color: #2e7d32;
+    font-weight: bold;
+    text-decoration: none;
+}
+.hidden {
+    display: none;
+}
+/* in products/style.css (add this at the end) */
+.role-selector {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.role-btn {
+    flex: 1;
+    padding: 0.8rem;
+    border: none;
+    background-color: #f0f0f0;
+    color: #555;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.role-btn.active {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+/* ================================================= */
+/* RESPONSIVE STYLES FOR LOGIN/SIGNUP PAGE           */
+/* ================================================= */
+
+/* --- For Mobile Phones (screens smaller than 576px) --- */
+@media (max-width: 576px) {
+    .form-page-container {
+        /* On mobile, align the form to the top instead of the center */
+        align-items: flex-start;
+        padding-top: 2rem;
+    }
+
+    .form-container {
+        /* Reduce the side padding to give more space to the content */
+        padding: 2rem 1.5rem;
+        
+        /* Remove the shadow for a flatter, more modern mobile look */
+        box-shadow: none;
+        
+        /* Add a subtle border to define the form area */
+        border: 1px solid #eee;
+    }
+
+    /* Make the main title a bit smaller */
+    .form h2 {
+        font-size: 1.8rem;
+    }
+
+    /* Make the button text a little smaller */
+    .cta-btn {
+        font-size: 1rem;
+    }
+}
